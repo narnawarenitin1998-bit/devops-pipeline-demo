@@ -1,3 +1,4 @@
+cat << 'EOF' > Jenkinsfile
 pipeline {
     agent any
     stages {
@@ -8,14 +9,14 @@ pipeline {
         }
         stage('2. Build Docker Image') {
             steps {
-                sh 'docker build -t demo-app:latest .'
+                bat 'docker build -t demo-app:latest .'
             }
         }
         stage('3. Deploy to Kubernetes') {
             steps {
-                sh 'kubectl apply -f k8s-manifest.yaml'
+                bat 'kubectl apply -f k8s-manifest.yaml'
             }
         }
     }
 }
-
+EOF
