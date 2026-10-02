@@ -1,4 +1,4 @@
-cat <<EOF > Jenkinsfile
+cat << 'EOF' > Jenkinsfile
 pipeline {
     agent any
     stages {
@@ -20,7 +20,3 @@ pipeline {
     }
 }
 EOF
-
-git add Jenkinsfile
-git commit -m "fix: clean jenkinsfile"
-git push origin main
