@@ -1,1 +1,1 @@
-echo "print('Hello from Junior DevOps Pipeline!')" 
+print('Hello from Junior DevOps Pipeline!')
