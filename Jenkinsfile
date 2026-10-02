@@ -14,7 +14,6 @@ pipeline {
         stage('3. Deploy to Kubernetes') {
             steps {
                 bat 'kubectl apply -f k8s-manifest.yaml --validate=false'
-            
             }
         }
     }
