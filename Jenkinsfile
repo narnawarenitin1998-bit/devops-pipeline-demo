@@ -20,3 +20,7 @@ pipeline {
     }
 }
 EOF
+
+git add Jenkinsfile
+git commit -m "fix: clean jenkinsfile"
+git push origin main
